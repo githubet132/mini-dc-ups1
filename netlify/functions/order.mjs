@@ -1,6 +1,9 @@
 
+
 export default async (req) => {
-  const headers = { "Content-Type": "application/json" };
+  const headers = {
+    "Content-Type": "application/json"
+  };
 
   const send = (data, status = 200) =>
     new Response(JSON.stringify(data), { status, headers });
@@ -35,7 +38,7 @@ export default async (req) => {
 
     if (
       ![1, 2].includes(quantity) ||
-      total !== (quantity === 1 ? 1300 : 2500)
+      total !== quantity * 649
     ) {
       throw new Error("Некоректна кількість або сума замовлення");
     }
@@ -43,7 +46,7 @@ export default async (req) => {
     const message = `
 🛒 НОВЕ ЗАМОВЛЕННЯ
 
-📦 Товар: Mini DC UPS 10 400 мАг
+📦 Товар: Зарядний пристрій ZR-04 12/24 В, 6 А
 🔢 Кількість: ${quantity} шт.
 💰 Сума: ${total} грн
 
@@ -75,6 +78,8 @@ export default async (req) => {
     return send({ success: true });
 
   } catch (error) {
-    return send({ error: error.message || "Помилка сервера" }, 500);
+    return send({
+      error: error.message || "Помилка сервера"
+    }, 500);
   }
 };
