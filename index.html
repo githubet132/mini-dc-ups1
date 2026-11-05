@@ -8,6 +8,15 @@
 <title>Зарядний пристрій ZR-04 12/24 В, 6 А | DropShop</title>
 <meta name="description" content="Автоматичний зарядний пристрій ZR-04 для автомобільних акумуляторів 12/24 В. LCD-дисплей, Pulse Repair, зарядний струм до 6 А.">
 
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9RXRSWXKE3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-9RXRSWXKE3');
+</script>
+
 <style>
 :root{
 --primary:#1f6b32;--secondary:#e9f1e6;--bg:#f7f8f3;
@@ -38,74 +47,16 @@ h1 em,h2 em{font-style:normal}
 .cta.secondary{background:var(--secondary);color:#17351d;box-shadow:none}
 .trust{display:flex;flex-wrap:wrap;gap:16px;margin-top:22px;color:var(--muted);font-size:13px}
 .trust span:before{content:'✓';color:var(--primary);font-weight:900;margin-right:7px}
-
-/* Галерея товару */
-.product-gallery{
-background:#fff;
-border:1px solid var(--line);
-border-radius:26px;
-padding:14px;
-box-shadow:var(--shadow);
-overflow:hidden;
-}
-.gallery-main{
-width:100%;
-aspect-ratio:1/1;
-border-radius:18px;
-overflow:hidden;
-background:#f4f5f1;
-}
-.gallery-main img{
-width:100%;
-height:100%;
-object-fit:contain;
-display:block;
-}
-.gallery-thumbs{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:10px;
-margin-top:12px;
-}
-.gallery-thumb{
-padding:4px;
-border:2px solid transparent;
-border-radius:12px;
-background:#f4f5f1;
-cursor:pointer;
-overflow:hidden;
-}
+.product-gallery{background:#fff;border:1px solid var(--line);border-radius:26px;padding:14px;box-shadow:var(--shadow);overflow:hidden}
+.gallery-main{width:100%;aspect-ratio:1/1;border-radius:18px;overflow:hidden;background:#f4f5f1}
+.gallery-main img{width:100%;height:100%;object-fit:contain;display:block}
+.gallery-thumbs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.gallery-thumb{padding:4px;border:2px solid transparent;border-radius:12px;background:#f4f5f1;cursor:pointer;overflow:hidden}
 .gallery-thumb.active{border-color:var(--primary)}
-.gallery-thumb img{
-display:block;
-width:100%;
-aspect-ratio:1/1;
-object-fit:contain;
-}
-.gallery-caption{
-padding:12px 4px 2px;
-color:var(--muted);
-font-size:13px;
-text-align:center;
-}
-.spec-photo{
-width:100%;
-height:100%;
-min-height:290px;
-object-fit:contain;
-display:block;
-border-radius:24px;
-background:#fff;
-}
-.photo-panel{
-min-height:290px;
-border-radius:24px;
-overflow:hidden;
-background:#fff;
-box-shadow:var(--shadow);
-}
-
-/* Основні секції */
+.gallery-thumb img{display:block;width:100%;aspect-ratio:1/1;object-fit:contain}
+.gallery-caption{padding:12px 4px 2px;color:var(--muted);font-size:13px;text-align:center}
+.spec-photo{width:100%;height:100%;min-height:290px;object-fit:contain;display:block;border-radius:24px;background:#fff}
+.photo-panel{min-height:290px;border-radius:24px;overflow:hidden;background:#fff;box-shadow:var(--shadow)}
 .section{padding:76px 0}
 .section.alt{background:#eef3ea}
 .kicker{color:var(--primary);font-size:12px;font-weight:900;letter-spacing:.13em;text-transform:uppercase}
@@ -134,25 +85,10 @@ details p{color:var(--muted);line-height:1.65;margin-bottom:0}
 .order-band h2{margin:0 0 8px;font-size:clamp(28px,4vw,40px)}
 .order-band p{margin:0;color:rgba(255,255,255,.8)}
 footer{padding:30px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:16px}
-
-/* Контакти */
 .contacts{padding:65px 0;text-align:center}
-.telegram-link{
-display:inline-flex;
-align-items:center;
-gap:12px;
-margin-top:20px;
-padding:15px 23px;
-background:#229ED9;
-color:white;
-border-radius:14px;
-font-weight:800;
-transition:.2s;
-}
+.telegram-link{display:inline-flex;align-items:center;gap:12px;margin-top:20px;padding:15px 23px;background:#229ED9;color:white;border-radius:14px;font-weight:800;transition:.2s}
 .telegram-link:hover{transform:translateY(-2px);filter:brightness(1.08)}
 .telegram-link svg{width:25px;height:25px;fill:currentColor}
-
-/* Форма замовлення */
 .modal-backdrop{position:fixed;inset:0;z-index:20;background:rgba(8,16,10,.64);display:none;align-items:center;justify-content:center;padding:18px}
 .modal-backdrop.open{display:flex}
 .modal{width:min(520px,100%);max-height:90vh;overflow:auto;background:white;color:var(--text);border-radius:24px;padding:28px;box-shadow:0 25px 80px rgba(0,0,0,.3)}
@@ -179,7 +115,6 @@ transition:.2s;
 .np-results button:hover{background:var(--secondary)}
 .np-results button:disabled{cursor:default;opacity:.6}
 .field input:disabled{opacity:.55;cursor:not-allowed}
-
 @media(max-width:760px){
 .wrap{width:min(100% - 28px,560px)}
 .toplinks{display:none}
@@ -213,51 +148,30 @@ footer{flex-direction:column}
 </header>
 
 <main id="top">
-
 <section class="wrap hero">
 <div class="hero-grid">
 <div>
 <span class="pill">Для автомобільних акумуляторів</span>
 <h1>Ваш акумулятор завжди <em>під контролем</em></h1>
 <p class="lead">Автоматичний зарядний пристрій ZR-04 — інтелектуальна зарядка акумуляторів 12/24 В із LCD-дисплеєм та функцією Pulse Repair.</p>
-<div class="price-line">
-<span class="price">649 грн</span>
-</div>
+<div class="price-line"><span class="price">649 грн</span></div>
 <button class="cta" onclick="openOrder()">Замовити зараз <span>→</span></button>
 <div class="trust">
-<span>Оплата при отриманні</span>
-<span>12 В / 24 В</span>
-<span>До 6 А</span>
+<span>Оплата при отриманні</span><span>12 В / 24 В</span><span>До 6 А</span>
 </div>
 </div>
 
 <div class="product-gallery">
 <div class="gallery-main">
-<img
-id="mainProductPhoto"
-src="https://zaberi.com.ua/content/images/47/600x600l80tl0/22942332245162.webp"
-alt="Зарядний пристрій ZR-04"
->
+<img id="mainProductPhoto" src="https://zaberi.com.ua/content/images/47/600x600l80tl0/22942332245162.webp" alt="Зарядний пристрій ZR-04">
 </div>
-
 <div class="gallery-thumbs">
-<button type="button" class="gallery-thumb active" onclick="changePhoto(0)">
-<img src="https://zaberi.com.ua/content/images/47/600x600l80tl0/22942332245162.webp" alt="ZR-04 фото 1">
-</button>
-<button type="button" class="gallery-thumb" onclick="changePhoto(1)">
-<img src="https://zaberi.com.ua/content/images/47/600x600l80tl0/32714494809456.webp" alt="ZR-04 фото 2">
-</button>
-<button type="button" class="gallery-thumb" onclick="changePhoto(2)">
-<img src="https://zaberi.com.ua/content/images/47/600x600l80tl0/21387604403606.webp" alt="ZR-04 фото 3">
-</button>
-<button type="button" class="gallery-thumb" onclick="changePhoto(3)">
-<img src="https://zaberi.com.ua/content/images/47/600x600l80tl0/51110391845148.webp" alt="ZR-04 фото 4">
-</button>
+<button type="button" class="gallery-thumb active" onclick="changePhoto(0)"><img src="https://zaberi.com.ua/content/images/47/600x600l80tl0/22942332245162.webp" alt="ZR-04 фото 1"></button>
+<button type="button" class="gallery-thumb" onclick="changePhoto(1)"><img src="https://zaberi.com.ua/content/images/47/600x600l80tl0/32714494809456.webp" alt="ZR-04 фото 2"></button>
+<button type="button" class="gallery-thumb" onclick="changePhoto(2)"><img src="https://zaberi.com.ua/content/images/47/600x600l80tl0/21387604403606.webp" alt="ZR-04 фото 3"></button>
+<button type="button" class="gallery-thumb" onclick="changePhoto(3)"><img src="https://zaberi.com.ua/content/images/47/600x600l80tl0/51110391845148.webp" alt="ZR-04 фото 4"></button>
 </div>
-
-<div class="gallery-caption">
-Зарядний пристрій ZR-04 · 12/24 В · 6 А
-</div>
+<div class="gallery-caption">Зарядний пристрій ZR-04 · 12/24 В · 6 А</div>
 </div>
 </div>
 </section>
@@ -268,36 +182,12 @@ alt="Зарядний пристрій ZR-04"
 <h2>Заряджайте акумулятор <em>зручно та просто</em></h2>
 <p class="section-intro">ZR-04 автоматично керує процесом зарядки сумісної акумуляторної батареї. LCD-дисплей допомагає контролювати стан роботи, а кілька режимів дозволяють підібрати програму відповідно до умов використання.</p>
 <div class="features">
-<article class="feature">
-<div class="feature-icon">ϟ</div>
-<h3>12 В та 24 В</h3>
-<p>Підтримка сумісних автомобільних і мотоциклетних акумуляторів різної напруги.</p>
-</article>
-<article class="feature">
-<div class="feature-icon">▣</div>
-<h3>LCD-дисплей</h3>
-<p>Цифрова індикація стану зарядки та вибраного режиму роботи пристрою.</p>
-</article>
-<article class="feature">
-<div class="feature-icon">⟳</div>
-<h3>Pulse Repair</h3>
-<p>Імпульсний режим обслуговування окремих типів свинцево-кислотних акумуляторів.</p>
-</article>
-<article class="feature">
-<div class="feature-icon">◷</div>
-<h3>Автоматична робота</h3>
-<p>Інтелектуальне регулювання процесу зарядки без постійного ручного контролю.</p>
-</article>
-<article class="feature">
-<div class="feature-icon">❄</div>
-<h3>Режими зима / літо</h3>
-<p>Можливість вибору сезонної програми за допомогою кнопки MODE.</p>
-</article>
-<article class="feature">
-<div class="feature-icon">✓</div>
-<h3>Зручне підключення</h3>
-<p>Проводи із затискачами «крокодил» для підключення до клем акумулятора.</p>
-</article>
+<article class="feature"><div class="feature-icon">ϟ</div><h3>12 В та 24 В</h3><p>Підтримка сумісних автомобільних і мотоциклетних акумуляторів різної напруги.</p></article>
+<article class="feature"><div class="feature-icon">▣</div><h3>LCD-дисплей</h3><p>Цифрова індикація стану зарядки та вибраного режиму роботи пристрою.</p></article>
+<article class="feature"><div class="feature-icon">⟳</div><h3>Pulse Repair</h3><p>Імпульсний режим обслуговування окремих типів свинцево-кислотних акумуляторів.</p></article>
+<article class="feature"><div class="feature-icon">◷</div><h3>Автоматична робота</h3><p>Інтелектуальне регулювання процесу зарядки без постійного ручного контролю.</p></article>
+<article class="feature"><div class="feature-icon">❄</div><h3>Режими зима / літо</h3><p>Можливість вибору сезонної програми за допомогою кнопки MODE.</p></article>
+<article class="feature"><div class="feature-icon">✓</div><h3>Зручне підключення</h3><p>Проводи із затискачами «крокодил» для підключення до клем акумулятора.</p></article>
 </div>
 </div>
 </section>
@@ -321,16 +211,9 @@ alt="Зарядний пристрій ZR-04"
 <div class="spec"><small>Корпус</small><strong>Пластик</strong></div>
 </div>
 </div>
-
 <div class="photo-panel">
-<img
-class="spec-photo"
-src="https://zaberi.com.ua/content/images/47/600x600l80tl0/32714494809456.webp"
-alt="Зарядний пристрій ZR-04"
-loading="lazy"
->
+<img class="spec-photo" src="https://zaberi.com.ua/content/images/47/600x600l80tl0/32714494809456.webp" alt="Зарядний пристрій ZR-04" loading="lazy">
 </div>
-
 </div>
 </section>
 
@@ -339,21 +222,9 @@ loading="lazy"
 <div class="kicker">Для різної техніки</div>
 <h2>Один пристрій — <em>широкі можливості</em></h2>
 <div class="features">
-<article class="feature">
-<div class="feature-icon">🚗</div>
-<h3>Автомобілі</h3>
-<p>Для зарядки сумісних автомобільних акумуляторів напругою 12 В.</p>
-</article>
-<article class="feature">
-<div class="feature-icon">🏍</div>
-<h3>Мотоцикли</h3>
-<p>Для обслуговування сумісних акумуляторних батарей мототехніки.</p>
-</article>
-<article class="feature">
-<div class="feature-icon">🔋</div>
-<h3>Інша техніка</h3>
-<p>Для акумуляторів відповідної напруги та ємності в межах характеристик пристрою.</p>
-</article>
+<article class="feature"><div class="feature-icon">🚗</div><h3>Автомобілі</h3><p>Для зарядки сумісних автомобільних акумуляторів напругою 12 В.</p></article>
+<article class="feature"><div class="feature-icon">🏍</div><h3>Мотоцикли</h3><p>Для обслуговування сумісних акумуляторних батарей мототехніки.</p></article>
+<article class="feature"><div class="feature-icon">🔋</div><h3>Інша техніка</h3><p>Для акумуляторів відповідної напруги та ємності в межах характеристик пристрою.</p></article>
 </div>
 </div>
 </section>
@@ -380,36 +251,18 @@ loading="lazy"
 <div class="kicker">Відповіді перед покупкою</div>
 <h2>Поширені <em>запитання</em></h2>
 <div class="faq">
-<details>
-<summary>Для яких акумуляторів підходить ZR-04?</summary>
-<p>Пристрій призначений для сумісних акумуляторів напругою 12 В і 24 В та ємністю від 6 до 100 А·год. Перед використанням перевірте тип акумулятора.</p>
-</details>
-<details>
-<summary>Що таке функція Pulse Repair?</summary>
-<p>Це імпульсний режим обслуговування окремих типів свинцево-кислотних акумуляторів. Він не гарантує відновлення повністю несправної або фізично пошкодженої батареї.</p>
-</details>
-<details>
-<summary>Чи потрібно вручну контролювати зарядку?</summary>
-<p>Пристрій має автоматичну систему керування процесом зарядки. Водночас рекомендується дотримуватися інструкції виробника та правил безпечного використання.</p>
-</details>
-<details>
-<summary>Чи є зимовий режим?</summary>
-<p>Так, передбачені сезонні режими зима/літо, які перемикаються кнопкою MODE.</p>
-</details>
-<details>
-<summary>Як підключити зарядний пристрій?</summary>
-<p>Використовуйте затискачі відповідно до полярності клем акумулятора. Перед підключенням ознайомтеся з інструкцією та перевірте сумісність батареї.</p>
-</details>
+<details><summary>Для яких акумуляторів підходить ZR-04?</summary><p>Пристрій призначений для сумісних акумуляторів напругою 12 В і 24 В та ємністю від 6 до 100 А·год. Перед використанням перевірте тип акумулятора.</p></details>
+<details><summary>Що таке функція Pulse Repair?</summary><p>Це імпульсний режим обслуговування окремих типів свинцево-кислотних акумуляторів. Він не гарантує відновлення повністю несправної або фізично пошкодженої батареї.</p></details>
+<details><summary>Чи потрібно вручну контролювати зарядку?</summary><p>Пристрій має автоматичну систему керування процесом зарядки. Водночас рекомендується дотримуватися інструкції виробника та правил безпечного використання.</p></details>
+<details><summary>Чи є зимовий режим?</summary><p>Так, передбачені сезонні режими зима/літо, які перемикаються кнопкою MODE.</p></details>
+<details><summary>Як підключити зарядний пристрій?</summary><p>Використовуйте затискачі відповідно до полярності клем акумулятора. Перед підключенням ознайомтеся з інструкцією та перевірте сумісність батареї.</p></details>
 </div>
 </div>
 </section>
 
 <section class="wrap" style="padding:54px 0">
 <div class="order-band">
-<div>
-<h2>Підтримуйте акумулятор у робочому стані</h2>
-<p>Автоматичний зарядний пристрій ZR-04 · 649 грн</p>
-</div>
+<div><h2>Підтримуйте акумулятор у робочому стані</h2><p>Автоматичний зарядний пристрій ZR-04 · 649 грн</p></div>
 <button class="cta secondary" onclick="openOrder()">Оформити замовлення →</button>
 </div>
 </section>
@@ -418,21 +271,13 @@ loading="lazy"
 <div class="wrap">
 <div class="kicker">Зв'язок із нами</div>
 <h2>Є запитання? <em>Напишіть нам</em></h2>
-<p class="section-intro" style="margin:0 auto">
-Звертайтеся до нас у Telegram — відповімо на ваші запитання щодо товару та замовлення.
-</p>
-<a class="telegram-link"
-href="https://t.me/bilyyshop"
-target="_blank"
-rel="noopener noreferrer">
-<svg viewBox="0 0 24 24" aria-hidden="true">
-<path d="M21.9 4.6 18.6 20c-.2 1.1-.8 1.4-1.7.9l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.4-4.8 8.7-7.9c.4-.4-.1-.6-.6-.2L6.7 14.1 2 12.6c-1-.3-1-1 .2-1.5L20.4 4c.8-.3 1.5.2 1.5.6Z"/>
-</svg>
+<p class="section-intro" style="margin:0 auto">Звертайтеся до нас у Telegram — відповімо на ваші запитання щодо товару та замовлення.</p>
+<a class="telegram-link" href="https://t.me/bilyyshop" target="_blank" rel="noopener noreferrer">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.6 18.6 20c-.2 1.1-.8 1.4-1.7.9l-4.7-3.5-2.3 2.2c-.3.3-.5.5-1 .5l.4-4.8 8.7-7.9c.4-.4-.1-.6-.6-.2L6.7 14.1 2 12.6c-1-.3-1-1 .2-1.5L20.4 4c.8-.3 1.5.2 1.5.6Z"/></svg>
 Написати в Telegram
 </a>
 </div>
 </section>
-
 </main>
 
 <footer class="wrap">
@@ -444,58 +289,33 @@ rel="noopener noreferrer">
 <!-- ФОРМА ЗАМОВЛЕННЯ -->
 <div class="modal-backdrop" id="orderModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" onclick="backdropClose(event)">
 <div class="modal">
-
 <div class="modal-head">
-<div>
-<h2 id="modalTitle">Оформити замовлення</h2>
-<p class="modal-sub">Зарядний пристрій ZR-04 · оплата при отриманні</p>
-</div>
+<div><h2 id="modalTitle">Оформити замовлення</h2><p class="modal-sub">Зарядний пристрій ZR-04 · оплата при отриманні</p></div>
 <button class="close" aria-label="Закрити" onclick="closeOrder()">×</button>
 </div>
 
 <div class="quantity">
-<button type="button" class="qty-option active" data-qty="1" onclick="setQty(1)">
-1 шт.<strong>649 грн</strong>
-</button>
-<button type="button" class="qty-option" data-qty="2" onclick="setQty(2)">
-2 шт.<strong>1298 грн</strong>
-</button>
+<button type="button" class="qty-option active" data-qty="1" onclick="setQty(1)">1 шт.<strong>649 грн</strong></button>
+<button type="button" class="qty-option" data-qty="2" onclick="setQty(2)">2 шт.<strong>1298 грн</strong></button>
 </div>
 
 <form id="orderForm">
-
-<label class="field">
-Ваше ПІБ
+<label class="field">Ваше ПІБ
 <input name="fullName" autocomplete="name" placeholder="Прізвище Ім’я По батькові" required minlength="5" maxlength="120">
 </label>
-
-<label class="field">
-Ваш телефон
+<label class="field">Ваш телефон
 <input name="phone" type="tel" autocomplete="tel" placeholder="+380 __ ___ __ __" required minlength="9" maxlength="24">
 </label>
-
-<label class="field">
-Місто
+<label class="field">Місто
 <input id="cityInput" type="text" placeholder="Почніть вводити назву міста" autocomplete="off" required>
 <div id="cityResults" class="np-results"></div>
 </label>
-
-<label class="field">
-Відділення Нової пошти
+<label class="field">Відділення Нової пошти
 <input id="branchInput" type="text" placeholder="Спочатку виберіть місто" autocomplete="off" required disabled>
 <div id="branchResults" class="np-results"></div>
 </label>
-
-<label class="consent">
-<input type="checkbox" required>
-<span>Погоджуюся з обробкою даних для оформлення замовлення.</span>
-</label>
-
-<div class="total">
-<span>До сплати</span>
-<strong id="totalPrice">649 грн</strong>
-</div>
-
+<label class="consent"><input type="checkbox" required><span>Погоджуюся з обробкою даних для оформлення замовлення.</span></label>
+<div class="total"><span>До сплати</span><strong id="totalPrice">649 грн</strong></div>
 <button class="cta" id="submitBtn" type="submit">Підтвердити заявку</button>
 <div class="notice" id="notice" role="status" aria-live="polite"></div>
 </form>
