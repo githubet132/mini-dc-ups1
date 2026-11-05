@@ -4,130 +4,162 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mini DC UPS 10400 мАг — резервне живлення</title>
+<meta name="theme-color" content="#f7f8f3">
+<title>Зарядний пристрій ZR-04 12/24 В, 6 А | DropShop</title>
+<meta name="description" content="Автоматичний зарядний пристрій ZR-04 для автомобільних акумуляторів 12/24 В. LCD-дисплей, Pulse Repair, зарядний струм до 6 А.">
 
 <style>
-:root{--site-primary:#1f6b32;--site-on-primary:#fff;--site-secondary:#e9f1e6;--site-on-secondary:#17351d;--site-background:#f7f8f3;--site-on-background:#171c18;--site-font-body:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--site-font-heading:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--surface:#fff;--surface-soft:#eef3ea;--muted:#667168;--line:#dce4da;--shadow:0 18px 55px rgba(25,45,29,.10)}
+:root{
+--primary:#1f6b32;--secondary:#e9f1e6;--bg:#f7f8f3;
+--text:#171c18;--muted:#667168;--surface:#fff;
+--line:#dce4da;--shadow:0 18px 55px rgba(25,45,29,.10)
+}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:var(--site-font-body);background:var(--site-background);color:var(--site-on-background)}
-#app{width:100%;min-height:100vh;overflow:hidden}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}
 a{color:inherit;text-decoration:none}
 button,input{font:inherit}
 .wrap{width:min(1120px,calc(100% - 40px));margin:auto}
 .topbar{display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:20px}
 .brand{font-weight:900;letter-spacing:-.04em;font-size:22px}
-.brand span,h1 em,h2 em{color:var(--site-primary)}
+.brand span,h1 em,h2 em{color:var(--primary)}
 .toplinks{display:flex;gap:26px;color:var(--muted);font-size:14px}
-.pill{display:inline-flex;align-items:center;gap:8px;border-radius:99px;background:var(--site-secondary);color:var(--site-on-secondary);padding:9px 14px;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.pill{display:inline-flex;border-radius:99px;background:var(--secondary);color:#17351d;padding:9px 14px;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
 .hero{padding:38px 0 76px}
 .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
-h1,h2,h3{font-family:var(--site-font-heading);letter-spacing:-.045em;line-height:1.04}
+h1,h2,h3{letter-spacing:-.045em;line-height:1.04}
 h1{font-size:clamp(40px,6vw,68px);margin:20px 0}
 h1 em,h2 em{font-style:normal}
 .lead{color:var(--muted);font-size:18px;line-height:1.65;max-width:540px}
 .price-line{display:flex;align-items:baseline;gap:14px;margin:26px 0}
 .price{font-size:42px;font-weight:900;letter-spacing:-.05em}
-.old{color:var(--muted);text-decoration:line-through}
-.cta{display:inline-flex;justify-content:center;align-items:center;gap:10px;border:0;border-radius:14px;background:var(--site-primary);color:var(--site-on-primary);padding:16px 24px;font-weight:850;cursor:pointer;box-shadow:0 10px 24px rgba(31,107,50,.20);transition:transform .18s,filter .18s}
+.cta{display:inline-flex;justify-content:center;align-items:center;gap:10px;border:0;border-radius:14px;background:var(--primary);color:white;padding:16px 24px;font-weight:850;cursor:pointer;box-shadow:0 10px 24px rgba(31,107,50,.20);transition:.18s}
 .cta:hover{transform:translateY(-2px);filter:brightness(1.06)}
-.cta.secondary{background:var(--surface-soft);color:var(--site-on-secondary);box-shadow:none}
+.cta.secondary{background:var(--secondary);color:#17351d;box-shadow:none}
 .trust{display:flex;flex-wrap:wrap;gap:16px;margin-top:22px;color:var(--muted);font-size:13px}
-.trust span:before{content:'✓';color:var(--site-primary);font-weight:900;margin-right:7px}
-.product-stage{position:relative;min-height:440px;display:grid;place-items:center;border-radius:30px;background:radial-gradient(circle at 50% 40%,#f7fff0 0,#e6efdf 42%,#d7e5d0 100%);overflow:hidden;box-shadow:var(--shadow)}
-.product-stage:before,.product-stage:after{content:'';position:absolute;border:1px solid rgba(31,107,50,.16);border-radius:50%;width:360px;height:360px}
-.product-stage:after{width:470px;height:470px}
-.device{z-index:1;position:relative;width:min(76%,390px);height:220px;border-radius:25px 25px 18px 18px;background:linear-gradient(145deg,#343936,#101311 55%,#242a26);box-shadow:0 34px 34px rgba(0,0,0,.32),inset 0 3px 4px rgba(255,255,255,.18);transform:perspective(700px) rotateX(8deg) rotateZ(-5deg)}
-.device:before{content:'';position:absolute;inset:14px 18px auto;height:110px;border-radius:13px;background:linear-gradient(145deg,#414743,#202522);border:1px solid #515a53}
-.device-top{position:absolute;top:31px;right:36px;z-index:2;display:flex;gap:7px;align-items:center;padding:9px 12px;border-radius:9px;background:#141a16;border:1px solid #3d493f}
-.leds{display:flex;flex-direction:column;gap:5px}
-.leds i{width:7px;height:7px;display:block;border-radius:50%;background:#62ed5c;box-shadow:0 0 8px #5aff57}
-.power{color:#f65b4d;font-size:20px;font-weight:900}
-.ports{position:absolute;z-index:2;left:27px;right:27px;bottom:25px;display:flex;gap:8px;align-items:center}
-.port{height:26px;min-width:30px;border-radius:4px;background:#080b09;border:2px solid #59615a;box-shadow:inset 0 2px 3px #000}
-.port.wide{width:52px}
-.port.usb{width:18px;height:34px}
-.device-label{position:absolute;z-index:2;left:28px;bottom:64px;color:#9ca79e;font-size:8px;letter-spacing:.12em}
-.floating-note{position:absolute;z-index:3;bottom:28px;left:25px;background:white;color:#1a281d;border-radius:13px;padding:12px 16px;box-shadow:var(--shadow);font-size:13px;font-weight:800}
-.floating-note strong{display:block;color:#1f6b32;font-size:20px}
+.trust span:before{content:'✓';color:var(--primary);font-weight:900;margin-right:7px}
+
+/* Ілюстрація зарядного пристрою */
+.product-stage{
+position:relative;min-height:440px;display:grid;place-items:center;
+border-radius:30px;
+background:radial-gradient(circle at 50% 40%,#fff9e9 0,#f4e8c9 45%,#e7d6aa 100%);
+overflow:hidden;box-shadow:var(--shadow)
+}
+.product-stage:before,.product-stage:after{
+content:'';position:absolute;border:1px solid rgba(130,100,35,.17);
+border-radius:50%;width:350px;height:350px
+}
+.product-stage:after{width:460px;height:460px}
+.charger{
+position:relative;z-index:1;width:220px;height:280px;
+border-radius:23px;background:linear-gradient(145deg,#303431,#101311 65%,#252925);
+border:5px solid #e4b52e;
+box-shadow:0 30px 45px rgba(0,0,0,.3),inset 0 2px 5px rgba(255,255,255,.2);
+transform:perspective(700px) rotateY(-9deg) rotateZ(-3deg)
+}
+.charger:before{
+content:'';position:absolute;left:18px;right:18px;top:20px;height:94px;
+border-radius:10px;background:linear-gradient(145deg,#111b16,#273b2d);
+border:2px solid #555f54;box-shadow:inset 0 0 15px #000
+}
+.screen{
+position:absolute;z-index:2;top:36px;left:34px;width:144px;height:60px;
+border-radius:5px;background:#a9c49a;color:#1a301c;
+display:flex;align-items:center;justify-content:center;
+font-family:monospace;font-size:23px;font-weight:bold;
+box-shadow:inset 0 0 8px rgba(0,0,0,.25)
+}
+.screen small{font-size:9px;display:block;text-align:center}
+.charger-brand{
+position:absolute;top:127px;left:0;right:0;text-align:center;
+color:#e8e8e8;font-size:13px;font-weight:900;letter-spacing:.15em
+}
+.mode-button{
+position:absolute;top:163px;left:50%;transform:translateX(-50%);
+width:56px;height:25px;border-radius:6px;background:#e5b62f;
+color:#171717;text-align:center;font-size:10px;font-weight:900;
+display:grid;place-items:center
+}
+.charger-vents{
+position:absolute;bottom:42px;left:30px;right:30px;
+display:flex;justify-content:center;gap:7px
+}
+.charger-vents i{height:5px;width:20px;border-radius:5px;background:#080a08}
+.wires{
+position:absolute;z-index:2;bottom:25px;right:25px;
+display:flex;gap:7px;align-items:center
+}
+.wire{width:45px;height:5px;border-radius:5px;transform:rotate(35deg)}
+.wire.red{background:#d53b30}
+.wire.black{background:#252525}
+.clamp{width:27px;height:13px;border-radius:3px;background:#d53b30;transform:rotate(35deg)}
+.clamp.black{background:#222}
+.floating-note{
+position:absolute;z-index:3;bottom:25px;left:25px;background:white;
+color:#1a281d;border-radius:13px;padding:12px 16px;
+box-shadow:var(--shadow);font-size:13px;font-weight:800
+}
+.floating-note strong{display:block;color:var(--primary);font-size:20px}
+
 .section{padding:76px 0}
-.section.alt{background:var(--surface-soft)}
-.kicker{color:var(--site-primary);font-size:12px;font-weight:900;letter-spacing:.13em;text-transform:uppercase}
+.section.alt{background:#eef3ea}
+.kicker{color:var(--primary);font-size:12px;font-weight:900;letter-spacing:.13em;text-transform:uppercase}
 h2{font-size:clamp(32px,4.5vw,48px);margin:14px 0 18px}
-.section-intro{color:var(--muted);line-height:1.7;max-width:650px;font-size:16px}
+.section-intro{color:var(--muted);line-height:1.7;max-width:720px;font-size:16px}
 .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
-.feature{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:24px}
-.feature-icon{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:var(--site-secondary);color:var(--site-primary);font-size:22px;margin-bottom:20px}
+.feature{background:white;border:1px solid var(--line);border-radius:20px;padding:24px}
+.feature-icon{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:var(--secondary);color:var(--primary);font-size:22px;margin-bottom:20px}
 .feature h3{font-size:20px;margin:0 0 9px}
 .feature p{color:var(--muted);font-size:14px;line-height:1.6;margin:0}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
-.info-panel{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:28px}
+.info-panel{background:white;border:1px solid var(--line);border-radius:24px;padding:28px}
 .spec-list{display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
 .spec{padding:17px 0;border-bottom:1px solid var(--line)}
 .spec small{display:block;color:var(--muted);margin-bottom:5px}
-.spec strong{font-size:18px}
-.device-mini{min-height:290px;display:grid;place-items:center;border-radius:24px;background:linear-gradient(145deg,#e8f0e3,#d7e6d1);overflow:hidden}
-.device-mini .device{transform:perspective(700px) rotateX(8deg) rotateZ(-5deg) scale(.75)}
+.spec strong{font-size:17px}
+.product-mini{
+min-height:290px;display:grid;place-items:center;border-radius:24px;
+background:linear-gradient(145deg,#f8efd9,#e7d6aa);overflow:hidden
+}
+.product-mini .charger{transform:perspective(700px) rotateY(-9deg) rotateZ(-3deg) scale(.78)}
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
-.step{border-left:3px solid var(--site-primary);padding:6px 18px}
+.step{border-left:3px solid var(--primary);padding:6px 18px}
 .step b{display:block;margin-bottom:8px}
 .step p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
 .faq{max-width:820px;margin-top:28px}
-details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:10px 0}
+details{background:white;border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:10px 0}
 summary{cursor:pointer;font-weight:800}
 details p{color:var(--muted);line-height:1.65;margin-bottom:0}
-.order-band{border-radius:26px;background:var(--site-primary);color:white;padding:34px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.order-band{border-radius:26px;background:var(--primary);color:white;padding:34px;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .order-band h2{margin:0 0 8px;font-size:clamp(28px,4vw,40px)}
 .order-band p{margin:0;color:rgba(255,255,255,.8)}
 footer{padding:30px 0;color:var(--muted);font-size:12px;display:flex;justify-content:space-between;gap:16px}
+
 .modal-backdrop{position:fixed;inset:0;z-index:20;background:rgba(8,16,10,.64);display:none;align-items:center;justify-content:center;padding:18px}
 .modal-backdrop.open{display:flex}
-.modal{width:min(520px,100%);max-height:90vh;overflow:auto;background:var(--surface);color:var(--site-on-background);border-radius:24px;padding:28px;box-shadow:0 25px 80px rgba(0,0,0,.3)}
+.modal{width:min(520px,100%);max-height:90vh;overflow:auto;background:white;color:var(--text);border-radius:24px;padding:28px;box-shadow:0 25px 80px rgba(0,0,0,.3)}
 .modal-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
 .modal h2{font-size:30px;margin:0 0 8px}
-.close{border:0;background:var(--surface-soft);color:var(--site-on-background);border-radius:50%;width:36px;height:36px;cursor:pointer;font-size:20px}
+.close{border:0;background:var(--secondary);color:var(--text);border-radius:50%;width:36px;height:36px;cursor:pointer;font-size:20px}
 .modal-sub{color:var(--muted);font-size:14px;margin:0 0 20px}
 .quantity{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}
-.qty-option{text-align:left;border:1px solid var(--line);border-radius:14px;padding:14px;background:var(--surface);color:var(--site-on-background);cursor:pointer}
-.qty-option.active{border:2px solid var(--site-primary);background:var(--site-secondary);color:var(--site-on-secondary)}
+.qty-option{text-align:left;border:1px solid var(--line);border-radius:14px;padding:14px;background:white;color:var(--text);cursor:pointer}
+.qty-option.active{border:2px solid var(--primary);background:var(--secondary);color:#17351d}
 .qty-option strong{display:block;font-size:20px;margin-top:4px}
 .field{display:block;margin:14px 0;font-size:13px;font-weight:750}
-.field input{display:block;width:100%;margin-top:7px;padding:14px;border:1px solid var(--line);border-radius:12px;background:var(--surface);color:var(--site-on-background);outline-color:var(--site-primary)}
+.field input{display:block;width:100%;margin-top:7px;padding:14px;border:1px solid var(--line);border-radius:12px;background:white;color:var(--text);outline-color:var(--primary)}
 .consent{display:flex;gap:9px;align-items:flex-start;color:var(--muted);font-size:12px;line-height:1.5;margin:16px 0}
 .total{display:flex;justify-content:space-between;align-items:center;padding:16px 0;border-top:1px solid var(--line);font-weight:800}
 .total strong{font-size:24px}
 .modal .cta{width:100%}
-.notice{display:none;margin-top:14px;padding:13px;border-radius:12px;background:var(--site-secondary);color:var(--site-on-secondary);font-size:13px;line-height:1.5}
+.notice{display:none;margin-top:14px;padding:13px;border-radius:12px;background:var(--secondary);color:#17351d;font-size:13px;line-height:1.5}
 .notice.show{display:block}
 .notice.error{background:#fff0ed;color:#8a2417}
-
-/* Нова пошта: результати пошуку */
-.np-results{
-  display:none;
-  margin-top:6px;
-  max-height:220px;
-  overflow-y:auto;
-  border:1px solid var(--line);
-  border-radius:12px;
-  background:var(--surface);
-  box-shadow:var(--shadow);
-  position:relative;
-  z-index:30;
-}
+.np-results{display:none;margin-top:6px;max-height:220px;overflow-y:auto;border:1px solid var(--line);border-radius:12px;background:white;box-shadow:var(--shadow);position:relative;z-index:30}
 .np-results.show{display:block}
-.np-results button{
-  display:block;
-  width:100%;
-  padding:12px 14px;
-  border:0;
-  border-bottom:1px solid var(--line);
-  background:transparent;
-  color:var(--site-on-background);
-  text-align:left;
-  cursor:pointer;
-  font-size:13px;
-}
-.np-results button:hover{background:var(--site-secondary)}
+.np-results button{display:block;width:100%;padding:12px 14px;border:0;border-bottom:1px solid var(--line);background:transparent;color:var(--text);text-align:left;cursor:pointer;font-size:13px}
+.np-results button:hover{background:var(--secondary)}
 .np-results button:disabled{cursor:default;opacity:.6}
 .field input:disabled{opacity:.55;cursor:not-allowed}
 
@@ -137,24 +169,12 @@ footer{padding:30px 0;color:var(--muted);font-size:12px;display:flex;justify-con
 .hero{padding:24px 0 52px}
 .hero-grid,.split{grid-template-columns:1fr;gap:28px}
 .product-stage{min-height:340px}
-.device{transform:perspective(700px) rotateX(8deg) rotateZ(-5deg) scale(.84)}
 .features{grid-template-columns:1fr}
 .section{padding:54px 0}
 .steps{grid-template-columns:1fr;gap:22px}
 .order-band{align-items:flex-start;flex-direction:column;padding:26px}
 footer{flex-direction:column}
 .modal{padding:22px}
-}
-
-@media(prefers-color-scheme:dark){
-body{background:#111;color:#f3f5f1}
-.section.alt{background:#222b23}
-.feature,.info-panel,.modal,details{background:#171b18;color:#f3f5f1}
-.product-stage,.device-mini{background:linear-gradient(145deg,#27372a,#1b281e)}
-.floating-note{background:#f7faf5}
-.field input{background:#222;color:white}
-.np-results{background:#171b18}
-.np-results button{color:#f3f5f1}
 }
 </style>
 </head>
@@ -169,7 +189,7 @@ body{background:#111;color:#f3f5f1}
 <a href="#specs">Характеристики</a>
 <a href="#faq">Питання</a>
 </nav>
-<button class="cta" onclick="openOrder()">Замовити · 1300 грн</button>
+<button class="cta" onclick="openOrder()">Замовити · 649 грн</button>
 </header>
 
 <main id="top">
@@ -177,59 +197,71 @@ body{background:#111;color:#f3f5f1}
 <section class="wrap hero">
 <div class="hero-grid">
 <div>
-<span class="pill">Резервне живлення для інтернету</span>
-<h1>Інтернет працює,<br><em>навіть коли світла немає</em></h1>
-<p class="lead">Mini DC UPS 10 400 мАг — компактне джерело резервного живлення для роутера, ONU та іншого сумісного мережевого обладнання.</p>
+<span class="pill">Для автомобільних акумуляторів</span>
+<h1>Ваш акумулятор завжди <em>під контролем</em></h1>
+<p class="lead">Автоматичний зарядний пристрій ZR-04 — інтелектуальна зарядка акумуляторів 12/24 В із LCD-дисплеєм та функцією Pulse Repair.</p>
 <div class="price-line">
-<span class="price">1300 грн</span>
-<span class="old">від 2600 грн</span>
+<span class="price">649 грн</span>
 </div>
 <button class="cta" onclick="openOrder()">Замовити зараз <span>→</span></button>
 <div class="trust">
 <span>Оплата при отриманні</span>
-<span>До 10 годин*</span>
-<span>5В / 9В / 12В + POE</span>
+<span>12 В / 24 В</span>
+<span>До 6 А</span>
 </div>
 </div>
 
-<div class="product-stage" aria-label="Ілюстрація Mini DC UPS">
-<div class="device">
-<div class="device-top">
-<div class="leds"><i></i><i></i><i></i><i></i></div>
-<span class="power">⏻</span>
+<div class="product-stage" aria-label="Ілюстрація зарядного пристрою ZR-04">
+<div class="charger">
+<div class="screen"><div><small>BATTERY</small>12.8V</div></div>
+<div class="charger-brand">SMART CHARGER</div>
+<div class="mode-button">MODE</div>
+<div class="charger-vents"><i></i><i></i><i></i><i></i><i></i></div>
 </div>
-<div class="device-label">POE　 LAN　 USB　 5V　 9V　 12V</div>
-<div class="ports">
-<span class="port"></span><span class="port"></span>
-<span class="port wide"></span><span class="port usb"></span>
-<span class="port"></span><span class="port"></span><span class="port"></span>
+<div class="wires">
+<span class="wire red"></span><span class="clamp"></span>
+<span class="wire black"></span><span class="clamp black"></span>
 </div>
-</div>
-<div class="floating-note">Ємність акумулятора<strong>10 400 мАг</strong></div>
+<div class="floating-note">Модель<strong>ZR-04 · 6 А</strong></div>
 </div>
 </div>
 </section>
 
 <section class="section alt" id="benefits">
 <div class="wrap">
-<div class="kicker">Стабільний зв’язок</div>
-<h2>Залишайтеся <em>онлайн</em> під час відключень</h2>
-<p class="section-intro">Компактний блок резервного живлення допомагає підтримувати роботу мережевого обладнання. Рівень заряду видно за LED-індикаторами, а кілька типів виходів дають змогу підключати сумісні пристрої.</p>
+<div class="kicker">Розумна зарядка</div>
+<h2>Заряджайте акумулятор <em>зручно та просто</em></h2>
+<p class="section-intro">ZR-04 автоматично керує процесом зарядки сумісної акумуляторної батареї. LCD-дисплей допомагає контролювати стан роботи, а кілька режимів дозволяють підібрати програму відповідно до умов використання.</p>
 <div class="features">
 <article class="feature">
-<div class="feature-icon">◷</div>
-<h3>До 10 годин роботи*</h3>
-<p>Заявлена автономність залежить від споживання підключених пристроїв і стану акумулятора.</p>
-</article>
-<article class="feature">
 <div class="feature-icon">ϟ</div>
-<h3>Кілька типів виходів</h3>
-<p>DC 5В / 9В / 12В, POE 15В / 24В та USB 5В для сумісної техніки.</p>
+<h3>12 В та 24 В</h3>
+<p>Підтримка сумісних автомобільних і мотоциклетних акумуляторів різної напруги.</p>
 </article>
 <article class="feature">
-<div class="feature-icon">◉</div>
-<h3>Зручне керування</h3>
-<p>LED-індикатори рівня заряду та окрема кнопка живлення на корпусі.</p>
+<div class="feature-icon">▣</div>
+<h3>LCD-дисплей</h3>
+<p>Цифрова індикація стану зарядки та вибраного режиму роботи пристрою.</p>
+</article>
+<article class="feature">
+<div class="feature-icon">⟳</div>
+<h3>Pulse Repair</h3>
+<p>Імпульсний режим обслуговування окремих типів свинцево-кислотних акумуляторів.</p>
+</article>
+<article class="feature">
+<div class="feature-icon">◷</div>
+<h3>Автоматична робота</h3>
+<p>Інтелектуальне регулювання процесу зарядки без постійного ручного контролю.</p>
+</article>
+<article class="feature">
+<div class="feature-icon">❄</div>
+<h3>Режими зима / літо</h3>
+<p>Можливість вибору сезонної програми за допомогою кнопки MODE.</p>
+</article>
+<article class="feature">
+<div class="feature-icon">✓</div>
+<h3>Зручне підключення</h3>
+<p>Проводи із затискачами «крокодил» для підключення до клем акумулятора.</p>
 </article>
 </div>
 </div>
@@ -239,31 +271,27 @@ body{background:#111;color:#f3f5f1}
 <div class="wrap split">
 <div>
 <div class="kicker">Технічні параметри</div>
-<h2>Характеристики <em>без зайвого</em></h2>
-<p class="section-intro">Перед підключенням перевірте напругу та споживання вашого обладнання. Сумарне навантаження не повинно перевищувати максимальну потужність пристрою.</p>
+<h2>Характеристики <em>ZR-04</em></h2>
+<p class="section-intro">Компактний зарядний пристрій для регулярного обслуговування сумісних автомобільних і мотоциклетних акумуляторів.</p>
 <div class="info-panel spec-list">
-<div class="spec"><small>Ємність</small><strong>10 400 мАг</strong></div>
-<div class="spec"><small>Потужність</small><strong>До 18 Вт</strong></div>
-<div class="spec"><small>DC-виходи</small><strong>5В / 9В / 12В</strong></div>
-<div class="spec"><small>POE</small><strong>15В / 24В</strong></div>
-<div class="spec"><small>USB</small><strong>5В / 2А</strong></div>
-<div class="spec"><small>Акумулятори</small><strong>4 × 2600 мАг</strong></div>
-<div class="spec"><small>Вхід</small><strong>220В, 50–60 Гц</strong></div>
-<div class="spec"><small>Робоча температура</small><strong>0°C – 45°C</strong></div>
+<div class="spec"><small>Модель</small><strong>ZR-04</strong></div>
+<div class="spec"><small>Напруга АКБ</small><strong>12 / 24 В</strong></div>
+<div class="spec"><small>Струм зарядки</small><strong>До 6 А</strong></div>
+<div class="spec"><small>Ємність АКБ</small><strong>6–100 А·год</strong></div>
+<div class="spec"><small>Дисплей</small><strong>Цифровий LCD</strong></div>
+<div class="spec"><small>Відновлення</small><strong>Pulse Repair</strong></div>
+<div class="spec"><small>Режими</small><strong>Зима / літо</strong></div>
+<div class="spec"><small>Керування</small><strong>Кнопка MODE</strong></div>
+<div class="spec"><small>Підключення</small><strong>Крокодили</strong></div>
+<div class="spec"><small>Корпус</small><strong>Пластик</strong></div>
 </div>
 </div>
-<div class="device-mini">
-<div class="device">
-<div class="device-top">
-<div class="leds"><i></i><i></i><i></i><i></i></div>
-<span class="power">⏻</span>
-</div>
-<div class="device-label">MINI DC UPS</div>
-<div class="ports">
-<span class="port"></span><span class="port"></span>
-<span class="port wide"></span><span class="port usb"></span>
-<span class="port"></span><span class="port"></span>
-</div>
+<div class="product-mini">
+<div class="charger">
+<div class="screen"><div><small>BATTERY</small>12.8V</div></div>
+<div class="charger-brand">SMART CHARGER</div>
+<div class="mode-button">MODE</div>
+<div class="charger-vents"><i></i><i></i><i></i><i></i><i></i></div>
 </div>
 </div>
 </div>
@@ -271,23 +299,23 @@ body{background:#111;color:#f3f5f1}
 
 <section class="section alt">
 <div class="wrap">
-<div class="kicker">Сумісні пристрої</div>
-<h2>Один резерв — для <em>різного обладнання</em></h2>
+<div class="kicker">Для різної техніки</div>
+<h2>Один пристрій — <em>широкі можливості</em></h2>
 <div class="features">
 <article class="feature">
-<div class="feature-icon">⌁</div>
-<h3>Wi‑Fi роутери</h3>
-<p>Підтримуйте домашню Wi‑Fi мережу, якщо параметри живлення роутера сумісні.</p>
+<div class="feature-icon">🚗</div>
+<h3>Автомобілі</h3>
+<p>Для зарядки сумісних автомобільних акумуляторів напругою 12 В.</p>
 </article>
 <article class="feature">
-<div class="feature-icon">▣</div>
-<h3>ONU та модеми</h3>
-<p>Живлення оптичного термінала або модема через відповідний DC-вихід.</p>
+<div class="feature-icon">🏍</div>
+<h3>Мотоцикли</h3>
+<p>Для обслуговування сумісних акумуляторних батарей мототехніки.</p>
 </article>
 <article class="feature">
-<div class="feature-icon">◉</div>
-<h3>Камери та IP-телефонія</h3>
-<p>Для сумісних камер спостереження, точок доступу та мережевих телефонів.</p>
+<div class="feature-icon">🔋</div>
+<h3>Інша техніка</h3>
+<p>Для акумуляторів відповідної напруги та ємності в межах характеристик пристрою.</p>
 </article>
 </div>
 </div>
@@ -296,15 +324,15 @@ body{background:#111;color:#f3f5f1}
 <section class="section">
 <div class="wrap split">
 <div>
-<div class="kicker">У комплекті</div>
-<h2>Усе необхідне <em>вже в коробці</em></h2>
-<p class="section-intro">Пристрій можна підготувати до роботи після отримання — спершу перевірте відповідність вихідної напруги вашій техніці.</p>
+<div class="kicker">Комплектація</div>
+<h2>Усе необхідне <em>в комплекті</em></h2>
+<p class="section-intro">Пристрій комплектується основними кабелями для підключення до електромережі та акумулятора.</p>
 </div>
 <div class="info-panel">
 <div class="steps" style="grid-template-columns:1fr">
-<div class="step"><b>01 · Mini DC UPS</b><p>Блок резервного живлення.</p></div>
-<div class="step"><b>02 · Кабелі</b><p>Кабелі для підключення та кабель живлення.</p></div>
-<div class="step"><b>03 · Інструкція</b><p>Інструкція користувача.</p></div>
+<div class="step"><b>01 · Зарядний пристрій ZR-04</b><p>Основний блок — 1 шт.</p></div>
+<div class="step"><b>02 · Мережевий кабель</b><p>Кабель живлення — 1 шт.</p></div>
+<div class="step"><b>03 · Проводи з «крокодилами»</b><p>Комплект затискачів для підключення до акумулятора.</p></div>
 </div>
 </div>
 </div>
@@ -316,20 +344,24 @@ body{background:#111;color:#f3f5f1}
 <h2>Поширені <em>запитання</em></h2>
 <div class="faq">
 <details>
-<summary>Чи перемикається живлення автоматично?</summary>
-<p>За описом товару, пристрій підтримує автоматичне перемикання на резервне живлення без перезавантаження роутера.</p>
+<summary>Для яких акумуляторів підходить ZR-04?</summary>
+<p>Пристрій призначений для сумісних акумуляторів напругою 12 В і 24 В та ємністю від 6 до 100 А·год. Перед використанням перевірте тип акумулятора.</p>
 </details>
 <details>
-<summary>Скільки пристроїв можна підключити?</summary>
-<p>Кілька сумісних пристроїв, якщо їхня напруга відповідає виходам, а сумарне навантаження не перевищує 18 Вт.</p>
+<summary>Що таке функція Pulse Repair?</summary>
+<p>Це імпульсний режим обслуговування окремих типів свинцево-кислотних акумуляторів. Він не гарантує відновлення повністю несправної або фізично пошкодженої батареї.</p>
 </details>
 <details>
-<summary>Чи можна заряджати телефон через USB?</summary>
-<p>Так, передбачений USB-вихід 5В/2А. Перевірте вимоги вашого пристрою до живлення.</p>
+<summary>Чи потрібно вручну контролювати зарядку?</summary>
+<p>Пристрій має автоматичну систему керування процесом зарядки. Водночас рекомендується дотримуватися інструкції виробника та правил безпечного використання.</p>
 </details>
 <details>
-<summary>Скільки UPS працюватиме без електрики?</summary>
-<p>Заявлено до 10 годин. Реальний час залежить від потужності споживання підключеної техніки та рівня заряду.</p>
+<summary>Чи є зимовий режим?</summary>
+<p>Так, передбачені сезонні режими зима/літо, які перемикаються кнопкою MODE.</p>
+</details>
+<details>
+<summary>Як підключити зарядний пристрій?</summary>
+<p>Використовуйте затискачі відповідно до полярності клем акумулятора. Перед підключенням ознайомтеся з інструкцією та перевірте сумісність батареї.</p>
 </details>
 </div>
 </div>
@@ -338,8 +370,8 @@ body{background:#111;color:#f3f5f1}
 <section class="wrap" style="padding:54px 0">
 <div class="order-band">
 <div>
-<h2>Інтернет під час відключень</h2>
-<p>Mini DC UPS 10 400 мАг · від 1300 грн</p>
+<h2>Підтримуйте акумулятор у робочому стані</h2>
+<p>Автоматичний зарядний пристрій ZR-04 · 649 грн</p>
 </div>
 <button class="cta secondary" onclick="openOrder()">Оформити замовлення →</button>
 </div>
@@ -349,7 +381,7 @@ body{background:#111;color:#f3f5f1}
 
 <footer class="wrap">
 <span>© 2026 DropShop.</span>
-<span>*Автономність залежить від навантаження. Перевіряйте сумісність обладнання.</span>
+<span>Перед зарядкою перевіряйте сумісність пристрою з акумулятором та дотримуйтесь полярності.</span>
 </footer>
 </div>
 
@@ -360,18 +392,17 @@ body{background:#111;color:#f3f5f1}
 <div class="modal-head">
 <div>
 <h2 id="modalTitle">Оформити замовлення</h2>
-<p class="modal-sub">Mini DC UPS 10 400 мАг · оплата при отриманні</p>
+<p class="modal-sub">Зарядний пристрій ZR-04 · оплата при отриманні</p>
 </div>
 <button class="close" aria-label="Закрити" onclick="closeOrder()">×</button>
 </div>
 
 <div class="quantity">
 <button type="button" class="qty-option active" data-qty="1" onclick="setQty(1)">
-1 шт.<strong>1300 грн</strong>
+1 шт.<strong>649 грн</strong>
 </button>
 <button type="button" class="qty-option" data-qty="2" onclick="setQty(2)">
-2 шт.<strong>2500 грн</strong>
-<small>Економія 100 грн</small>
+2 шт.<strong>1298 грн</strong>
 </button>
 </div>
 
@@ -379,47 +410,23 @@ body{background:#111;color:#f3f5f1}
 
 <label class="field">
 Ваше ПІБ
-<input
-name="fullName"
-autocomplete="name"
-placeholder="Прізвище Ім’я По батькові"
-required
-minlength="5"
-maxlength="120">
+<input name="fullName" autocomplete="name" placeholder="Прізвище Ім’я По батькові" required minlength="5" maxlength="120">
 </label>
 
 <label class="field">
 Ваш телефон
-<input
-name="phone"
-type="tel"
-autocomplete="tel"
-placeholder="+380 __ ___ __ __"
-required
-minlength="9"
-maxlength="24">
+<input name="phone" type="tel" autocomplete="tel" placeholder="+380 __ ___ __ __" required minlength="9" maxlength="24">
 </label>
 
 <label class="field">
 Місто
-<input
-id="cityInput"
-type="text"
-placeholder="Почніть вводити назву міста"
-autocomplete="off"
-required>
+<input id="cityInput" type="text" placeholder="Почніть вводити назву міста" autocomplete="off" required>
 <div id="cityResults" class="np-results"></div>
 </label>
 
 <label class="field">
 Відділення Нової пошти
-<input
-id="branchInput"
-type="text"
-placeholder="Спочатку виберіть місто"
-autocomplete="off"
-required
-disabled>
+<input id="branchInput" type="text" placeholder="Спочатку виберіть місто" autocomplete="off" required disabled>
 <div id="branchResults" class="np-results"></div>
 </label>
 
@@ -430,296 +437,210 @@ disabled>
 
 <div class="total">
 <span>До сплати</span>
-<strong id="totalPrice">1300 грн</strong>
+<strong id="totalPrice">649 грн</strong>
 </div>
 
-<button class="cta" id="submitBtn" type="submit">
-Підтвердити заявку
-</button>
-
+<button class="cta" id="submitBtn" type="submit">Підтвердити заявку</button>
 <div class="notice" id="notice" role="status" aria-live="polite"></div>
-
 </form>
 </div>
 </div>
 
 <script>
-let quantity = 1;
-
-let selectedCity = null;
-let selectedBranch = null;
-
+let quantity=1;
+let selectedCity=null;
+let selectedBranch=null;
 let cityTimer;
 let branchTimer;
 
 function openOrder(){
-  document.getElementById('orderModal').classList.add('open');
-  document.body.style.overflow='hidden';
+document.getElementById('orderModal').classList.add('open');
+document.body.style.overflow='hidden';
 }
-
 function closeOrder(){
-  document.getElementById('orderModal').classList.remove('open');
-  document.body.style.overflow='';
+document.getElementById('orderModal').classList.remove('open');
+document.body.style.overflow='';
 }
-
 function backdropClose(e){
-  if(e.target.id==='orderModal')closeOrder();
+if(e.target.id==='orderModal')closeOrder();
 }
-
 function setQty(n){
-  quantity=n;
-
-  document.querySelectorAll('.qty-option').forEach(b=>{
-    b.classList.toggle('active',Number(b.dataset.qty)===n);
-  });
-
-  document.getElementById('totalPrice').textContent=
-    (n===1?1300:2500)+' грн';
+quantity=n;
+document.querySelectorAll('.qty-option').forEach(b=>{
+b.classList.toggle('active',Number(b.dataset.qty)===n);
+});
+document.getElementById('totalPrice').textContent=(n*649)+' грн';
 }
 
-// Відображення результатів пошуку
 function showResults(container,items,onSelect){
-  container.innerHTML='';
-
-  if(!items.length){
-    const empty=document.createElement('button');
-    empty.type='button';
-    empty.disabled=true;
-    empty.textContent='Нічого не знайдено';
-    container.appendChild(empty);
-    container.classList.add('show');
-    return;
-  }
-
-  items.forEach(item=>{
-    const button=document.createElement('button');
-    button.type='button';
-    button.textContent=item.name;
-
-    button.addEventListener('click',()=>{
-      onSelect(item);
-    });
-
-    container.appendChild(button);
-  });
-
-  container.classList.add('show');
+container.innerHTML='';
+if(!items.length){
+const empty=document.createElement('button');
+empty.type='button';
+empty.disabled=true;
+empty.textContent='Нічого не знайдено';
+container.appendChild(empty);
+container.classList.add('show');
+return;
+}
+items.forEach(item=>{
+const button=document.createElement('button');
+button.type='button';
+button.textContent=item.name;
+button.addEventListener('click',()=>onSelect(item));
+container.appendChild(button);
+});
+container.classList.add('show');
 }
 
-// Запит до Netlify Function
 async function searchNP(type,params={}){
-  const query=new URLSearchParams({type,...params});
-
-  const response=await fetch(
-    '/.netlify/functions/np?'+query.toString()
-  );
-
-  const result=await response.json();
-
-  if(!response.ok){
-    throw new Error(result.error||'Помилка пошуку Нової пошти');
-  }
-
-  return result.results||[];
+const query=new URLSearchParams({type,...params});
+const response=await fetch('/.netlify/functions/np?'+query.toString());
+const result=await response.json();
+if(!response.ok)throw new Error(result.error||'Помилка пошуку Нової пошти');
+return result.results||[];
 }
 
 const cityInput=document.getElementById('cityInput');
 const cityResults=document.getElementById('cityResults');
-
 const branchInput=document.getElementById('branchInput');
 const branchResults=document.getElementById('branchResults');
 
-// Пошук міста
 cityInput.addEventListener('input',()=>{
-  clearTimeout(cityTimer);
+clearTimeout(cityTimer);
+selectedCity=null;
+selectedBranch=null;
+branchInput.value='';
+branchInput.disabled=true;
+branchInput.placeholder='Спочатку виберіть місто';
+cityResults.classList.remove('show');
+branchResults.classList.remove('show');
+const q=cityInput.value.trim();
+if(q.length<2)return;
 
-  selectedCity=null;
-  selectedBranch=null;
-
-  branchInput.value='';
-  branchInput.disabled=true;
-  branchInput.placeholder='Спочатку виберіть місто';
-
-  cityResults.classList.remove('show');
-  branchResults.classList.remove('show');
-
-  const q=cityInput.value.trim();
-
-  if(q.length<2)return;
-
-  cityTimer=setTimeout(async()=>{
-    try{
-      const items=await searchNP('cities',{q});
-
-      if(cityInput.value.trim()!==q||selectedCity)return;
-
-      showResults(cityResults,items,item=>{
-        selectedCity=item;
-
-        cityInput.value=item.name;
-
-        selectedBranch=null;
-        branchInput.value='';
-        branchInput.disabled=false;
-        branchInput.placeholder='Введіть номер або адресу відділення';
-
-        cityResults.classList.remove('show');
-        branchResults.classList.remove('show');
-
-        branchInput.focus();
-      });
-
-    }catch(error){
-      cityResults.classList.remove('show');
-      alert(error.message);
-    }
-  },350);
+cityTimer=setTimeout(async()=>{
+try{
+const items=await searchNP('cities',{q});
+if(cityInput.value.trim()!==q||selectedCity)return;
+showResults(cityResults,items,item=>{
+selectedCity=item;
+cityInput.value=item.name;
+selectedBranch=null;
+branchInput.value='';
+branchInput.disabled=false;
+branchInput.placeholder='Введіть номер або адресу відділення';
+cityResults.classList.remove('show');
+branchResults.classList.remove('show');
+branchInput.focus();
+});
+}catch(error){
+cityResults.classList.remove('show');
+alert(error.message);
+}
+},350);
 });
 
-// Пошук відділення
 branchInput.addEventListener('input',()=>{
-  clearTimeout(branchTimer);
+clearTimeout(branchTimer);
+selectedBranch=null;
+branchResults.classList.remove('show');
+if(!selectedCity)return;
+const q=branchInput.value.trim();
+if(q.length<1)return;
 
-  selectedBranch=null;
-  branchResults.classList.remove('show');
-
-  if(!selectedCity)return;
-
-  const q=branchInput.value.trim();
-
-  if(q.length<1)return;
-
-  branchTimer=setTimeout(async()=>{
-    try{
-      const items=await searchNP('warehouses',{
-        cityRef:selectedCity.ref,
-        q
-      });
-
-      if(branchInput.value.trim()!==q||!selectedCity)return;
-
-      showResults(branchResults,items,item=>{
-        selectedBranch=item;
-        branchInput.value=item.name;
-        branchResults.classList.remove('show');
-      });
-
-    }catch(error){
-      branchResults.classList.remove('show');
-      alert(error.message);
-    }
-  },350);
+branchTimer=setTimeout(async()=>{
+try{
+const items=await searchNP('warehouses',{cityRef:selectedCity.ref,q});
+if(branchInput.value.trim()!==q||!selectedCity)return;
+showResults(branchResults,items,item=>{
+selectedBranch=item;
+branchInput.value=item.name;
+branchResults.classList.remove('show');
+});
+}catch(error){
+branchResults.classList.remove('show');
+alert(error.message);
+}
+},350);
 });
 
-// Закриття списків при кліку поза ними
 document.addEventListener('click',e=>{
-  if(!e.target.closest('#cityInput')&&
-     !e.target.closest('#cityResults')){
-    cityResults.classList.remove('show');
-  }
-
-  if(!e.target.closest('#branchInput')&&
-     !e.target.closest('#branchResults')){
-    branchResults.classList.remove('show');
-  }
+if(!e.target.closest('#cityInput')&&!e.target.closest('#cityResults')){
+cityResults.classList.remove('show');
+}
+if(!e.target.closest('#branchInput')&&!e.target.closest('#branchResults')){
+branchResults.classList.remove('show');
+}
 });
 
-// Відправлення замовлення
 document.getElementById('orderForm').addEventListener('submit',async function(e){
+e.preventDefault();
+if(!this.reportValidity())return;
 
-  e.preventDefault();
+if(!selectedCity){
+cityInput.setCustomValidity('Виберіть місто зі списку Нової пошти.');
+cityInput.reportValidity();
+cityInput.setCustomValidity('');
+return;
+}
+if(!selectedBranch){
+branchInput.setCustomValidity('Виберіть відділення зі списку Нової пошти.');
+branchInput.reportValidity();
+branchInput.setCustomValidity('');
+return;
+}
 
-  if(!this.reportValidity())return;
+const btn=document.getElementById('submitBtn');
+const notice=document.getElementById('notice');
+btn.disabled=true;
+btn.textContent='Надсилаємо…';
+notice.className='notice';
+notice.textContent='';
 
-  if(!selectedCity){
-    cityInput.setCustomValidity(
-      'Виберіть місто зі списку Нової пошти.'
-    );
-    cityInput.reportValidity();
-    cityInput.setCustomValidity('');
-    return;
-  }
+const formData=new FormData(this);
+const data={
+fullName:formData.get('fullName').trim(),
+phone:formData.get('phone').trim(),
+city:selectedCity.name,
+cityRef:selectedCity.ref,
+branch:selectedBranch.name,
+branchRef:selectedBranch.ref,
+quantity:quantity,
+total:quantity*649
+};
 
-  if(!selectedBranch){
-    branchInput.setCustomValidity(
-      'Виберіть відділення зі списку Нової пошти.'
-    );
-    branchInput.reportValidity();
-    branchInput.setCustomValidity('');
-    return;
-  }
-
-  const btn=document.getElementById('submitBtn');
-  const notice=document.getElementById('notice');
-
-  btn.disabled=true;
-  btn.textContent='Надсилаємо…';
-
-  notice.className='notice';
-  notice.textContent='';
-
-  const formData=new FormData(this);
-
-  const data={
-    fullName:formData.get('fullName').trim(),
-    phone:formData.get('phone').trim(),
-
-    city:selectedCity.name,
-    cityRef:selectedCity.ref,
-
-    branch:selectedBranch.name,
-    branchRef:selectedBranch.ref,
-
-    quantity:quantity,
-    total:quantity===1?1300:2500
-  };
-
-  try{
-    const response=await fetch('/.netlify/functions/order',{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify(data)
-    });
-
-    const result=await response.json();
-
-    if(!response.ok||!result.success){
-      throw new Error(
-        result.error||'Не вдалося надіслати заявку.'
-      );
-    }
-
-    notice.className='notice show';
-    notice.textContent=
-      'Дякуємо! Заявку прийнято. Ми зв’яжемося з вами найближчим часом.';
-
-    this.reset();
-
-    selectedCity=null;
-    selectedBranch=null;
-
-    branchInput.disabled=true;
-    branchInput.placeholder='Спочатку виберіть місто';
-
-    cityResults.classList.remove('show');
-    branchResults.classList.remove('show');
-
-    setQty(1);
-
-  }catch(err){
-    notice.className='notice show error';
-    notice.textContent=
-      err.message||'Помилка з’єднання. Спробуйте ще раз.';
-  }finally{
-    btn.disabled=false;
-    btn.textContent='Підтвердити заявку';
-  }
+try{
+const response=await fetch('/.netlify/functions/order',{
+method:'POST',
+headers:{'Content-Type':'application/json'},
+body:JSON.stringify(data)
+});
+const result=await response.json();
+if(!response.ok||!result.success){
+throw new Error(result.error||'Не вдалося надіслати заявку.');
+}
+notice.className='notice show';
+notice.textContent='Дякуємо! Заявку прийнято. Ми зв’яжемося з вами найближчим часом.';
+this.reset();
+selectedCity=null;
+selectedBranch=null;
+branchInput.disabled=true;
+branchInput.placeholder='Спочатку виберіть місто';
+cityResults.classList.remove('show');
+branchResults.classList.remove('show');
+setQty(1);
+}catch(err){
+notice.className='notice show error';
+notice.textContent=err.message||'Помилка з’єднання. Спробуйте ще раз.';
+}finally{
+btn.disabled=false;
+btn.textContent='Підтвердити заявку';
+}
 });
 
 document.addEventListener('keydown',e=>{
-  if(e.key==='Escape')closeOrder();
+if(e.key==='Escape')closeOrder();
 });
 </script>
-
 </body>
 </html>
