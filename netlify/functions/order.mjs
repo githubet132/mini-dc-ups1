@@ -1,12 +1,12 @@
+
 export default async (req) => {
+  const headers = { "Content-Type": "application/json" };
+
+  const send = (data, status = 200) =>
+    new Response(JSON.stringify(data), { status, headers });
+
   if (req.method !== "POST") {
-    return new Response(
-      JSON.stringify({ error: "Method not allowed" }),
-      {
-        status: 405,
-        headers: { "Content-Type": "application/json" }
-      }
-    );
+    return send({ error: "Method not allowed" }, 405);
   }
 
   try {
@@ -19,13 +19,39 @@ export default async (req) => {
       throw new Error("Telegram environment variables are missing");
     }
 
+    if (
+      !data.fullName ||
+      !data.phone ||
+      !data.city ||
+      !data.cityRef ||
+      !data.branch ||
+      !data.branchRef
+    ) {
+      throw new Error("Заповніть усі поля доставки");
+    }
+
+    const quantity = Number(data.quantity);
+    const total = Number(data.total);
+
+    if (
+      ![1, 2].includes(quantity) ||
+      total !== (quantity === 1 ? 1300 : 2500)
+    ) {
+      throw new Error("Некоректна кількість або сума замовлення");
+    }
+
     const message = `
 🛒 НОВЕ ЗАМОВЛЕННЯ
 
-👤 Ім'я: ${data.name || "Не вказано"}
-📞 Телефон: ${data.phone || "Не вказано"}
-📦 Товар: Mini DC UPS
-🔢 Кількість: ${data.quantity || 1}
+📦 Товар: Mini DC UPS 10 400 мАг
+🔢 Кількість: ${quantity} шт.
+💰 Сума: ${total} грн
+
+👤 ПІБ: ${data.fullName}
+📞 Телефон: ${data.phone}
+
+🏙 Місто: ${data.city}
+🏤 Відділення: ${data.branch}
 `;
 
     const response = await fetch(
@@ -43,24 +69,12 @@ export default async (req) => {
     const result = await response.json();
 
     if (!response.ok || !result.ok) {
-      throw new Error("Telegram rejected the message");
+      throw new Error("Telegram не прийняв повідомлення");
     }
 
-    return new Response(
-      JSON.stringify({ success: true }),
-      {
-        status: 200,
-        headers: { "Content-Type": "application/json" }
-      }
-    );
+    return send({ success: true });
 
   } catch (error) {
-    return new Response(
-      JSON.stringify({ error: error.message }),
-      {
-        status: 500,
-        headers: { "Content-Type": "application/json" }
-      }
-    );
+    return send({ error: error.message || "Помилка сервера" }, 500);
   }
 };
